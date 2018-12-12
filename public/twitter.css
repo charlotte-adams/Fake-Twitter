@@ -1,0 +1,112 @@
+body {
+    margin: 0 10%;
+    padding: 0;
+    background-image: url(Twitter-Images/Twitter_Logo_White_On_Image.png);
+}
+
+h1 {
+    color:  #55ACEE;
+}
+
+a { 
+    color: #66757F;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div#header {
+    display: none;
+    height: 32px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0ex;
+    margin: 0ex;
+    background: #55ACEE;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #66757F;
+}
+
+div#header h1 {
+    float: left;
+    margin: 0;
+    padding: 2px 0 2px 10px;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+div#header #header_menu {
+    float: right;
+    margin: 0;
+    padding: 10px 10px 5px 0;
+}
+
+div.page {
+    display: none;
+    margin: 34px 10px 10px 10px;
+}
+
+div.tweet {
+    margin-top: 0.5ex;
+    width: 400px;
+    border-radius: 15px;
+    border: 2px solid lightblue;
+    padding: 1em 2em;
+}
+
+div.tweet:hover{
+    background-color: lightblue;
+}
+
+span.tweet_post_time{
+    font-size: 10pt;
+    color: blue;
+    border: 1px solid gray;
+}
+
+span.tweet_feed {
+    font-weight: bold;
+    margin-right: 1ex;
+}
+
+table#tweets_list td {
+    padding-right: 1ex;
+}
+
+table#feeds_list td {
+    cursor: pointer;
+}
+
+span.feed_status {
+    height: 0.5em;
+    width: 0.5em;
+    display: block;
+    padding-bottom: 2px;
+    border: 1px solid #55ACEE;
+}
+
+span.feed_sub {
+    background: #292F33;
+}
+
+.pic{
+    height: 50px;
+    float: left;
+}
+
+
+
+HEX: #55ACEE
+
+HEX: #292F33
+
+HEX: #66757F
+
+HEX: #CCD6DD
+
+HEX: #E1E8ED
+
+HEX: #FFFFFF
+

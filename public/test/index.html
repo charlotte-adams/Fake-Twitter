@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Twitter Route Tester</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://unloop.edu/bootstrap/v3.3.7/dist/css/bootstrap.min.css">
+    <style type="text/css">
+    ul, ol {
+    	line-height: 1.5;
+    }
+
+    .intro {
+    	width: 50%;
+    }
+    </style>
+</head>
+
+<body class="container">
+	<div class="page-header">
+	  <h1>Twitter Testing Page</h1>
+	</div>
+
+	<div class="error-message-container bg-danger hidden">
+        <p>Error! You are not viewing this page on localhost! The tests will not run.</p>
+        <p>To run the tests, point your browser to <a href="http://localhost:8585/test/">http://localhost:8585/test/</a></p>
+    </div>
+
+    <div class="intro well">
+        <p>Running these tests will have an effect on the data in your databases. New users and tweets will be added, and user subscriptions may also be altered.</p>
+        <p>Are you sure you want to run these tests?</p>
+        <button id="go" class="btn btn-warning">Yes, run the tests</button>
+    </div>
+
+    <div class="after">
+        <p>
+            After the tests are complete, you may wish to restore your database to its initial state (as specified in <code>twitter-schema.sql</code>). To do so, follow these steps:
+        </p>
+
+        <ol class="list">
+            <li>Quit the server (if it is running)</li>
+            <li>Open <code>twitter-schema.sql</code> in Sublime Text</li>
+            <li>
+                Make sure that the Build System is set to "SQLite"
+                <ol>
+                    <li>Open <code>Tools</code> menu</li>
+                    <li>Click "Build System"</li>
+                    <li>Select "SQLite"</li>
+                </ol>
+            </li>
+            <li>Press <kbd>Ctrl</kbd> + <kbd>B</kbd> to run the build system</li>
+            <li>Your database has been reverted!</li>
+        </ol>
+    </div>
+
+
+    <div class="results"></div>
+
+    <script src="http://unloop.edu/jquery-3.1.1.js"></script>
+    <script src="http://unloop.edu/bootstrap/v3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="tests.js"></script>
+</body>
+
+</html>
